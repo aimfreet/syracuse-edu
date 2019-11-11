@@ -1,3 +1,4 @@
 module.exports = {
-  publicPath: '/syracuse-edu/',
+  publicPath: '/syracuse-edu',
+  outputDir: 'docs',
 };
