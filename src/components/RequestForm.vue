@@ -79,8 +79,11 @@ export default {
        padding: 1.5rem;
        @include flex-column;
        align-items: center;
-       max-width: 450px;
+       width: 100%;
        box-shadow: 0px 3px 17px 0px rgba(0, 0, 5, 0.32);
+       @media screen and (min-width: 1023px) {
+         max-width: 450px;
+       }
     }
     &__title {
       font-size: 1.5rem;
@@ -91,6 +94,9 @@ export default {
     &__legend {
       margin-bottom: 1rem;
     }
+    &__form {
+      width: 100%;
+    }
     &__fieldset {
       border: none;
     }
@@ -98,6 +104,9 @@ export default {
       width: 100%;
       padding: .5rem;
       margin-bottom: 1rem;
+    }
+    &__select {
+      width: 100%;
     }
     &__footer {
       width: 100%;

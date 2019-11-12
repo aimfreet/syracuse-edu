@@ -20,8 +20,11 @@
 
 <style lang="scss">
   .info-cards {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    @include flex-column;
+    @media screen and (min-width: 1023px) {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
   }
   .info-card {
 
