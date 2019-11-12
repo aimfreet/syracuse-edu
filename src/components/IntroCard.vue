@@ -1,7 +1,9 @@
 <template>
   <div class="intro-card">
     <div class="intro-card__card">
-      <h1>{{ introTitle }}</h1>
+      <h1 class="intro-card__title">
+        {{ introTitle }}
+      </h1>
       <div
         class="intro-text"
       >
@@ -33,10 +35,17 @@ export default {
       background: $white;
       padding: 1.5rem;
       color: $su-dark-gray;
-      max-width: 450px;
       border-left: 6px solid $su-medium-gray;
       box-shadow: 0px 3px 17px 0px rgba(0, 0, 5, 0.32);
       margin-bottom: 2rem;
+      @media screen and (min-width: 1023px) {
+        max-width: 450px;
+      }
+    }
+    &__title {
+      font-size: 2rem;
+      font-family: ShermanSerif, Georgia, serif;
+      font-weight: normal;
     }
   }
 </style>

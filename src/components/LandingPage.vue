@@ -1,18 +1,22 @@
 <template>
   <div class="landing-page">
+    <page-header />
     <hero-banner />
+    <info-cards />
   </div>
 </template>
 
 <script>
+import PageHeader from './PageHeader.vue';
 import HeroBanner from './HeroBanner.vue';
-
+import InfoCards from './InfoCards.vue';
 
 export default {
   name: 'LandingPage',
   components: {
     HeroBanner,
-
+    InfoCards,
+    PageHeader,
   },
 };
 </script>

@@ -1,5 +1,6 @@
 <template>
   <div class="hero-banner">
+    <div class="hero-banner__image" />
     <div class="hero-banner__content">
       <intro-card />
       <request-form />
@@ -22,31 +23,35 @@ export default {
 <style lang="scss">
     .hero-banner {
         width: 100%;
-        height: 400px;
-        background-image: url('../assets/images/FlorenceSU.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center center;
-        @include flex-column-center;
-        position: relative;
-         @media screen and (min-width: 1023px) {
-            height: 100vh;
-            padding: 2rem;
-         }
+        &__image {
+            background-image: url('../assets/images/FlorenceSU.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: top center;
+            width: 100%;
+            height: 400px;
+            @include flex-column-center;
+            position: relative;
+            @media screen and (min-width: 1023px) {
+                height: 100vh;
+                padding: 2rem;
+            }
+        }
         &__content {
-            position: absolute;
-            top: 270px;
-            left: 0;
-            margin: 0 1.5rem;
+            position: relative;
+            margin-top: -120px;
+            margin-left: 1.5rem;
+            margin-right: 1.5rem;
             @media screen and (min-width: 1023px) {
                 width: 100%;
                 height: 100%;
                 display: grid;
+                margin: 0;
                 grid-template-columns: 1fr 1fr;
                 grid-column-gap: 2rem;
-                position: relative;
                 top: 0;
-
+                position: absolute;
+                left: 0;
             }
         }
     }
