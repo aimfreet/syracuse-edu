@@ -26,7 +26,7 @@ export default {
         background-image: url('../assets/images/FlorenceSU.jpg');
         background-repeat: no-repeat;
         background-size: cover;
-        background-position: center center;
+        background-position: top center;
         @include flex-column-center;
         position: relative;
          @media screen and (min-width: 1023px) {
