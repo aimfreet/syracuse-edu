@@ -18,9 +18,9 @@
 export default {
   data() {
     return {
-      introTitle: 'Lorem Ipsum Dolar',
+      introTitle: 'Where will you go?',
       introText: `
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br /><br />Aliquam nulla facilisi cras fermentum odio eu feugiat pretium. Dictumst vestibulum rhoncus est pellentesque.
+      Syracuse University Abroad consistently ranks among the highest-quality international study programs in the country.<br/><br/>Students who choose Syracuse Abroad’s programs prepare for the world in the world with invaluable internships, Signature Seminars, language study at all levels, homestays, and community engagement projects.
       `,
     };
   },
