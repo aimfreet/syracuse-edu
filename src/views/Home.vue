@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <landing-page/>
+    <landing-page />
   </div>
 </template>
 
@@ -9,9 +9,15 @@
 import LandingPage from '@/components/LandingPage.vue';
 
 export default {
-  name: 'home',
+  name: 'Home',
   components: {
     LandingPage,
   },
 };
 </script>
+
+<style lang="scss">
+.home {
+  width: 100%;
+}
+</style>

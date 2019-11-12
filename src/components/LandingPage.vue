@@ -1,14 +1,18 @@
 <template>
   <div class="landing-page">
-    test
+    <hero-banner />
   </div>
 </template>
 
 <script>
+import HeroBanner from './HeroBanner.vue';
+
+
 export default {
   name: 'LandingPage',
-  props: {
-    msg: String,
+  components: {
+    HeroBanner,
+
   },
 };
 </script>
@@ -19,6 +23,7 @@ export default {
   font-family: ShermanSans, "Trebuchet MS", Tahoma, sans-serif;
   font-weight: normal;
   font-style: normal;
-  color: $su-primary-blue;
+  color: $su-dark-gray;
+  width: 100%;
  }
 </style>
