@@ -122,9 +122,13 @@ export default {
       border: none;
       height: 100%;
       padding-left: .5rem;
+      font-size: 1rem;
       -webkit-appearance: none;
       -moz-appearance: none;
       appearance: none;
+      & > option {
+
+      }
       &:focus {
         outline: none;
       }

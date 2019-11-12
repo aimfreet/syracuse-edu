@@ -7,7 +7,8 @@
         href="#"
         class="info-cards__card-link"
       >
-        <div class="info-cards__card program-card">
+        <div class="info-cards__card program-card" />
+        <div class="info-cards__card-overlay">
           <h3 class="info-cards__card-title">
             Programs
           </h3>
@@ -21,16 +22,30 @@
         <h3 class="info-cards__card-title">
           Upcoming Deadlines &amp; Events
         </h3>
+        <p>
+          The application deadline for Summer 2020 programs is February 10;
+          deadline for Fall 2020 programs is March 15.
+        </p>
+        <p>
+          Check out our Interested Students page to schedule
+          an appointment with an advisor or request more information about our programs.
+        </p>
       </div>
     </div>
     <div
       class="info-cards__column"
     >
-      <div class="info-cards__card">
-        <h3 class="info-cards__card-title">
-          Meet With An Advisor
-        </h3>
-      </div>
+      <a
+        href="#"
+        class="info-cards__card-link"
+      >
+        <div class="info-cards__card advisor-card" />
+        <div class="info-cards__card-overlay">
+          <h3 class="info-cards__card-title">
+            Meet With An Advisor
+          </h3>
+        </div>
+      </a>
     </div>
   </div>
 </template>
@@ -55,6 +70,7 @@
     &__card {
       width: 100%;
       padding: 2rem;
+      position: relative;
       height: 250px;
       margin-left: 1.5rem;
       margin-right: 1.5rem;
@@ -69,6 +85,18 @@
         display: flex;
         width: 100%;
         text-decoration: none;
+        color: $white;
+        position: relative;
+      }
+      &-overlay {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background: rgba(0,0,0,0.5);
+        align-items: center;
+        width: 100%;
+        height: 100%;
       }
     }
   }
@@ -82,5 +110,13 @@
   .event-card {
     background-color: $su-light-gray;
     color: $su-dark-gray;
+    font-size: .875rem;
+  }
+  .advisor-card {
+    background-image: url('../assets/images/AdvisorsSU.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    color: $white;
+    @include flex-column-center;
   }
 </style>
