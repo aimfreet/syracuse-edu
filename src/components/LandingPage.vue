@@ -3,6 +3,7 @@
     <page-header />
     <hero-banner />
     <info-cards />
+    <page-footer />
   </div>
 </template>
 
@@ -10,6 +11,7 @@
 import PageHeader from './PageHeader.vue';
 import HeroBanner from './HeroBanner.vue';
 import InfoCards from './InfoCards.vue';
+import PageFooter from './PageFooter.vue';
 
 export default {
   name: 'LandingPage',
@@ -17,6 +19,7 @@ export default {
     HeroBanner,
     InfoCards,
     PageHeader,
+    PageFooter,
   },
 };
 </script>

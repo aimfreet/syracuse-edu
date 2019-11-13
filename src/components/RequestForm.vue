@@ -12,26 +12,33 @@
           <legend class="request-form__legend">
             Request a viewbook or join our mailing list.
           </legend>
-          <label>Name</label>
+          <label for="name">Name</label>
           <div class="request-form__input-container">
             <input
+              id="name"
               class="request-form__input"
               type="text"
               name="fullname"
               placeholder="Full Name"
             >
           </div>
-          <label>Email Address</label>
+          <label for="email">Email Address</label>
           <div class="request-form__input-container">
             <input
+              id="email"
               class="request-form__input"
               type="email"
+              name="email"
               placeholder="email@emailaddress.com"
             >
           </div>
-          <label>Study Location</label>
+          <label for="location">Study Location</label>
           <div class="request-form__select-container">
-            <select class="request-form__select">
+            <select
+              id="location"
+              class="request-form__select"
+              name="location"
+            >
               <option
                 v-for="location in studyLocations"
                 :key="location.locationName"
@@ -115,6 +122,9 @@ export default {
         margin-bottom: 1rem;
         border: 1px solid $su-light-gray;
         padding: .5rem;
+        &:focus-within {
+          box-shadow: 0px 0px 2px 1px $su-light-gray;
+        }
       }
     }
     &__select {
@@ -126,9 +136,6 @@ export default {
       -webkit-appearance: none;
       -moz-appearance: none;
       appearance: none;
-      & > option {
-
-      }
       &:focus {
         outline: none;
       }

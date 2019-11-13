@@ -4,7 +4,7 @@
       class="info-cards__column"
     >
       <a
-        href="#"
+        href="http://suabroad.syr.edu/destinations/"
         class="info-cards__card-link"
       >
         <div class="info-cards__card program-card">
@@ -39,7 +39,7 @@
       class="info-cards__column"
     >
       <a
-        href="#"
+        href="http://suabroad.syr.edu/who-are-you/interested-students/meet-with-an-advisor/"
         class="info-cards__card-link"
       >
         <div class="info-cards__card advisor-card">
