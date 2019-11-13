@@ -115,6 +115,7 @@ export default {
       width: 100%;
       border: none;
       padding: .25rem;
+      font-size: 1rem;
       &:focus {
         outline: none;
       }
