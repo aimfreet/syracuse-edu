@@ -56,8 +56,8 @@
 
 <style lang="scss">
   .info-cards {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
     @include flex-column;
     @media screen and (min-width: 1024px) {
       display: grid;
