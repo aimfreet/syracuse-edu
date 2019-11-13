@@ -20,7 +20,7 @@ export default {
     return {
       introTitle: 'Where will you go?',
       introText: `
-      Syracuse University Abroad consistently ranks among the highest-quality international study programs in the country.<br/><br/>Students who choose Syracuse Abroad’s programs prepare for the world in the world with invaluable internships, Signature Seminars, language study at all levels, homestays, and community engagement projects.
+      Syracuse University Abroad consistently ranks among the highest-quality international study programs in the country.<br/><br>Students who choose Syracuse Abroad’s programs prepare for the world in the world with invaluable internships, Signature Seminars, language study at all levels, homestays, and community engagement projects.
       `,
     };
   },
@@ -38,14 +38,18 @@ export default {
       border-left: 6px solid $su-medium-gray;
       box-shadow: 0px 3px 17px 0px rgba(0, 0, 5, 0.32);
       margin-bottom: 2rem;
-      @media screen and (min-width: 1023px) {
+      @media screen and (min-width: 1024px) {
         max-width: 450px;
+        margin: 0;
       }
     }
     &__title {
-      font-size: 2rem;
+      font-size: 1.75rem;
       font-family: ShermanSerif, Georgia, serif;
       font-weight: normal;
+      @media screen and (min-width: 1024px) {
+        font-size: 2rem;
+      }
     }
   }
 </style>

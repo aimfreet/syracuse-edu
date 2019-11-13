@@ -1,4 +1,9 @@
 @charset "utf-8";
+
+@import 'fonts.scss';
+@import 'variables.scss';
+@import 'mixins.scss';
+
 html {
     box-sizing: border-box;
   }
@@ -24,6 +29,7 @@ h4 {
 fieldset {
     padding: 0;
 }
-@import 'fonts.scss';
-@import 'variables.scss';
-@import 'mixins.scss'
+a {
+    color: $su-link-color;
+}
+

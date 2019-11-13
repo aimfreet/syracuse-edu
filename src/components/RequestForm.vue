@@ -83,7 +83,7 @@ export default {
        align-items: center;
        width: 100%;
        box-shadow: 0px 3px 17px 0px rgba(0, 0, 5, 0.32);
-       @media screen and (min-width: 1023px) {
+       @media screen and (min-width: 1024px) {
          max-width: 450px;
        }
     }
