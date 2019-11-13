@@ -10,7 +10,7 @@
         <div class="info-cards__card program-card">
           <div class="info-cards__card-overlay">
             <h3 class="info-cards__card-title">
-              Programs
+              Discover Our Programs
             </h3>
           </div>
         </div>
